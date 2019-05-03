@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Explore BuzzFeed</title>
+  <title>Comparision</title>
 
   <!-- CSS styles -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -10,83 +10,99 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <!-- CSS styles -->
 
-
 </head>
 <body>
-<!-- navbar -->
+
+<!-- nav bar -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="index.html">Youtube Likes</div></a>
+    <a class="navbar-brand" href="index.html">Youtube Likes</a>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
-  
+
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-          <li class="nav-item dropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              Unsolved
+                Unsolved
             </a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="unsolved_views.html">Views</a>
-              <a class="dropdown-item" href="unsolved_comments.html">Comments</a>
-              <a class="dropdown-item" href="unsolved_data.html">Data</a>
+                <a class="dropdown-item" href="unsolved_views.html">Views</a>
+                <a class="dropdown-item" href="unsolved_comments.html">Comments</a>
+                <a class="dropdown-item" href="unsolved_data.html">Data</a>
             </div>
-          </li>
-          <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
                 Taste Test
-              </a>
-              <div class="dropdown-menu">
+                </a>
+                <div class="dropdown-menu">
                 <a class="dropdown-item" href="taste_views.html">Views</a>
                 <a class="dropdown-item" href="taste_comments.html">Comments</a>
                 <a class="dropdown-item" href="taste_data.html">Data</a>
-              </div>
+                </div>
             </li>
-          <li class="nav-item">
-              <a class="nav-link" href="comparision.html">Comparison</a>
-            </li> 
-      </ul> 
+            <li class="nav-item">
+                <a class="nav-link" href="comparision.html">Comparison</a>
+            </li>   
+        </ul> 
     </div>
 </nav>
-<!-- nav bar -->
-
+<!-- navbar -->
+    
 <br>
 <br>
 
 <!-- content block -->
 <div class="container">
-  <div class="row">
-    <div class="col-md-8">
-      <div class="content">
-          <h3><i class="fa fa-info-circle fa-content"></i> BuzzFeed Video Analytics </h3>
-        <hr>
-        <p>The purpose of this project is analyze how likeness changes as view count and comment count increases of two popular BuzzFeed shows, <a href="https://www.youtube.com/channel/UCKijjvu6bN1c-ZHVwR7-5WA" target="_blank">Unsolved</a> and <a href="https://www.youtube.com/playlist?list=PL5vtqDuUM1Dk_EeReI21fzkdnDz2LJySH">Taste Test</a>. To do so, data were retrieved from the <a href="https://developers.google.com/">Youtube API</a>. We pulled a total of 100 videos, with 50 for each show. 
-        <p>After assembling both datasets, we used Matplotlib to plot various video metrics vs. number of likes and used Scipy to determine statistical significance. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations observed. </p>          
-        <p><small>Project Repository on Github</small></p>     
-      </div>
+    <div class="row justify-content-md-center">
+        <div class="col-md-10">
+            <div class="content">
+                <h3><i class="fa fa-list-alt fa-content"></i> Comparison</h3>
+                <hr>
+                <p>Click on any plot to get an in-depth analysis.</p>
+                <p><h2><i class="fas fa-user-secret"></i> BuzzFeed Unsolved</h2></p>
+                <div class="container">
+                        <div class="row">
+                          <div class="col-md-6">
+                              <div class="hovereffect">
+                                <center><h4>Likes Vs. Views</h4></center>
+                                <a href="unsolved_views.html"><img src="Images/like_vs_views.png" alt="like_vs_comments"></a>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <center><h4>Likes Vs. Comments</h4></center>
+                                <div class="hovereffect">
+                                    <a href="unsolved_comments.html"><img src="Images/like_vs_comments.png" alt="like_vs_comments"></a>
+                                </div>
+                          </div>
+                    </div>
+                </div>
+                <br>
+                <p><h2><i class="fas fa-utensils"></i> BuzzFeed Taste Test</h2></p>
+                <div class="container">
+                        <div class="row">
+                          <div class="col-md-6">
+                              <div class="hovereffect">
+                                <center><h4>Likes Vs. Views</h4></center>
+                                <a href="taste_views.html"><img src="Images/like_vs_views2.png" alt="like_vs_comments2"></a>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <center><h4>Likes Vs. Comments</h4></center>
+                                <div class="hovereffect">
+                                    <a href="taste_comments.html"><img src="Images/like_vs_comments2.png" alt="like_vs_comments2"></a>
+                                </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="col-md-4">
-      <div class="content">
-        <h3><i class="fas fa-chart-bar fa-content"></i> Visualizations</h3>
-        <hr>
-        <h4><i class="fas fa-user-secret"></i> BuzzFeed Unsolved</h4>
-          <div class="hovereffect">
-          <a href="unsolved_comments.html"><img src="Images/like_vs_comments.png" alt="like_vs_comments" height="90%" width="90%"></a></div>
-          <br>
-          <div class="hovereffect"><a href="unsolved_views.html"><img src="Images/like_vs_views.png" alt="like_vs_views" height="90%" width="90%"></a></div>
-          <br>
-          <h4><i class="fas fa-utensils"></i> BuzzFeed Taste Test</h4>
-          <div class="hovereffect"><a href="taste_comments.html"><img src="Images/like_vs_comments2.png" alt="like_vs_views2" height="90%" width="90%"></a></div>
-          <br>
-          <div class="hovereffect"><a href="taste_views.html"><img src="Images/like_vs_views2.png" alt="like_vs_views2" height="90%" width="90%"></a></div>
-      </div>
-    </div>
-  </div>
 </div>
 <!-- content block -->
-<br>
 
+<br>
 <br>
 <br>
 
@@ -105,9 +121,7 @@
           <!-- Content -->
           <h5><strong>Hi, I'm Ying</strong></h5>
           <p class="p-footer">I recently graduated with a PhD in Entmology and is currently pursuing a Data Analytics certification at UC Berkeley Extension.</p>
-
           <p class="p-footer">I also write Python tutorials and create websites for local grassroots organizations committed to social justice.</p>
-
           <p class="p-footer">Interested in learning more? Let's connect.</p>
         </div>
         <!-- Grid column -->
@@ -163,29 +177,30 @@
               <li>
                 <a href="https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1007953" target="_blank">
                   <h6><em>PLoS Genetics</em> Paper</h6></a>
-              </li>     
+              </li>
+              
             </ul>
+
           </div>
-
           <!-- Grid column -->
+
       </div>
-
       <!-- Grid row -->
-    </div>
 
+    </div>
     <!-- Footer Links -->
+
     <div class="footer-copyright text-center py-2" style="color: rgb(179, 179, 179); font-family: arial; font-size: 13px;">Made in 2019</a>
     </div>
 
 </footer>
 <!-- Footer -->
 
-
 <!-- scripts -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <!-- scripts -->
+
 </body>
 </html>
-

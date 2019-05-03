@@ -2,54 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Explore BuzzFeed</title>
-
-  <!-- CSS styles -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <!-- CSS styles -->
-
+  <title>Unsolved - Comments</title>
+    <!-- CSS styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- CSS styles -->
 
 </head>
 <body>
 <!-- navbar -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="index.html">Youtube Likes</div></a>
+    <a class="navbar-brand" href="index.html">Youtube Likes</a>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
-  
+    
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              Unsolved
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="unsolved_views.html">Views</a>
-              <a class="dropdown-item" href="unsolved_comments.html">Comments</a>
-              <a class="dropdown-item" href="unsolved_data.html">Data</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                Taste Test
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="taste_views.html">Views</a>
-                <a class="dropdown-item" href="taste_comments.html">Comments</a>
-                <a class="dropdown-item" href="taste_data.html">Data</a>
-              </div>
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                Unsolved
+                </a>
+                <div class="dropdown-menu">
+                <a class="dropdown-item" href="unsolved_views.html">Views</a>
+                <a class="dropdown-item" href="unsolved_comments.html">Comments</a>
+                <a class="dropdown-item" href="unsolved_data.html">Data</a>
+                </div>
             </li>
-          <li class="nav-item">
-              <a class="nav-link" href="comparision.html">Comparison</a>
-            </li> 
-      </ul> 
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Taste Test
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="taste_views.html">Views</a>
+                    <a class="dropdown-item" href="taste_comments.html">Comments</a>
+                    <a class="dropdown-item" href="taste_data.html">Data</a>
+                </div>
+                </li>
+            <li class="nav-item">
+                <a class="nav-link" href="comparision.html">Comparison</a>
+            </li>
+        </ul> 
     </div>
 </nav>
-<!-- nav bar -->
-
+<!-- navbar -->
+      
 <br>
 <br>
 
@@ -58,21 +56,23 @@
   <div class="row">
     <div class="col-md-8">
       <div class="content">
-          <h3><i class="fa fa-info-circle fa-content"></i> BuzzFeed Video Analytics </h3>
-        <hr>
-        <p>The purpose of this project is analyze how likeness changes as view count and comment count increases of two popular BuzzFeed shows, <a href="https://www.youtube.com/channel/UCKijjvu6bN1c-ZHVwR7-5WA" target="_blank">Unsolved</a> and <a href="https://www.youtube.com/playlist?list=PL5vtqDuUM1Dk_EeReI21fzkdnDz2LJySH">Taste Test</a>. To do so, data were retrieved from the <a href="https://developers.google.com/">Youtube API</a>. We pulled a total of 100 videos, with 50 for each show. 
-        <p>After assembling both datasets, we used Matplotlib to plot various video metrics vs. number of likes and used Scipy to determine statistical significance. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations observed. </p>          
-        <p><small>Project Repository on Github</small></p>     
-      </div>
+          <h3><i class="fas fa-chart-line fa-content"></i> Unsolved: Likes vs. Comments </h3>
+            <hr>
+            <img src="Images/like_vs_comments.png" alt="likes_vs_comments">
+            <br>
+            <br>
+            <p>This graph shows that as comment count increases, the number of like count increases, which demonstrates a positive relationship (<samp><small>r = 0.90</small></samp>).</p>
+            <p>The coefficient of determination, r<sup>2</sup>, is 0.81, which is large. This indicates that knowing the comment count should allow us make an accurate estimate of like count. </p> 
+            <p>The low p-value of <0.0001 demonstrates a significant relationship between comment and like count. The p-value shows the probability that the slope is zero, which indicates that there is no correlation between the two variables. Thus, the low p-value indicates that the probability that the two variables are not related are very slim. </p>
+            <p>Collectively, these results demonstrate that there is a significant correlation between number of likes and comments for the BuzzFeed show, Unsolved. </p>
+        </div>
     </div>
-
     <div class="col-md-4">
       <div class="content">
         <h3><i class="fas fa-chart-bar fa-content"></i> Visualizations</h3>
         <hr>
         <h4><i class="fas fa-user-secret"></i> BuzzFeed Unsolved</h4>
-          <div class="hovereffect">
-          <a href="unsolved_comments.html"><img src="Images/like_vs_comments.png" alt="like_vs_comments" height="90%" width="90%"></a></div>
+        <div class="img-select"><img src="Images/like_vs_comments.png" alt="like_vs_comments" height="90%" width="90%"></div>
           <br>
           <div class="hovereffect"><a href="unsolved_views.html"><img src="Images/like_vs_views.png" alt="like_vs_views" height="90%" width="90%"></a></div>
           <br>
@@ -85,8 +85,8 @@
   </div>
 </div>
 <!-- content block -->
-<br>
 
+<br>
 <br>
 <br>
 
@@ -163,29 +163,31 @@
               <li>
                 <a href="https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1007953" target="_blank">
                   <h6><em>PLoS Genetics</em> Paper</h6></a>
-              </li>     
+              </li>
+              
             </ul>
+
           </div>
-
           <!-- Grid column -->
+
       </div>
-
       <!-- Grid row -->
-    </div>
 
+    </div>
     <!-- Footer Links -->
+
     <div class="footer-copyright text-center py-2" style="color: rgb(179, 179, 179); font-family: arial; font-size: 13px;">Made in 2019</a>
     </div>
 
-</footer>
-<!-- Footer -->
-
+  </footer>
+  <!-- Footer -->
 
 <!-- scripts -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <!-- scripts -->
+
 </body>
 </html>
 
