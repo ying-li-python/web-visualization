@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Explore BuzzFeed</title>
+  <title>Youtube Analytics</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- CSS styles -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -15,7 +15,7 @@
 <body>
 <!-- navbar -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="index.html">Youtube Likes</div></a>
+    <a class="navbar-brand" href="index.html">Youtube Analytics</div></a>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
@@ -24,21 +24,21 @@
       <ul class="navbar-nav">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              Unsolved
+              BuzzFeed Unsolved
             </a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="unsolved_views.html">Views</a>
-              <a class="dropdown-item" href="unsolved_comments.html">Comments</a>
+              <a class="dropdown-item" href="unsolved_views.html">Likes vs. Views</a>
+              <a class="dropdown-item" href="unsolved_comments.html">Like vs. Comments</a>
               <a class="dropdown-item" href="unsolved_data.html">Data</a>
             </div>
           </li>
           <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                Taste Test
+                BuzzFeed Taste Test
               </a>
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="taste_views.html">Views</a>
-                <a class="dropdown-item" href="taste_comments.html">Comments</a>
+                <a class="dropdown-item" href="taste_views.html">Likes vs. Views</a>
+                <a class="dropdown-item" href="taste_comments.html">Likes vs. Comments</a>
                 <a class="dropdown-item" href="taste_data.html">Data</a>
               </div>
             </li>
@@ -58,9 +58,10 @@
   <div class="row">
     <div class="col-md-8">
       <div class="content">
-          <h3><i class="fa fa-info-circle fa-content"></i> BuzzFeed Video Analytics </h3>
+          <h3><i class="fa fa-info-circle fa-content"></i> BuzzFeed Video Analysis </h3>
         <hr>
-        <p>The purpose of this project is analyze how video likes changes as view count or comment count increases of two popular BuzzFeed shows, <a href="https://www.youtube.com/channel/UCKijjvu6bN1c-ZHVwR7-5WA" target="_blank">Unsolved</a> and <a href="https://www.youtube.com/playlist?list=PL5vtqDuUM1Dk_EeReI21fzkdnDz2LJySH">Taste Test</a>. To do so, data were retrieved from the <a href="https://developers.google.com/">Youtube API</a>. We pulled a total of 100 videos, with 50 for each show. 
+        <p>Welcome! The purpose of this project is analyze how video likes changes as view count or comment count increases of two popular BuzzFeed shows, <a href="https://www.youtube.com/channel/UCKijjvu6bN1c-ZHVwR7-5WA" target="_blank">Unsolved</a> and <a href="https://www.youtube.com/playlist?list=PL5vtqDuUM1Dk_EeReI21fzkdnDz2LJySH">Taste Test</a>. Is there a correlation between the number of views or comments with video likes for each show? How do these relationships differ between each show?</p>
+        <p>To answer these questions, data were retrieved from the <a href="https://developers.google.com/">Youtube API</a>. We pulled a total of 100 videos, with 50 for each show. </p>
         <p>After assembling both datasets, we used Matplotlib to plot various video metrics vs. number of likes and used Scipy to determine statistical significance. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations observed. </p>          
         <p><small><a href="https://github.com/ying-li-python/web-visualization">Project Repository on Github</a></small></p>     
       </div>
