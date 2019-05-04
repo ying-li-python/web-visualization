@@ -69,6 +69,10 @@ img {
     padding: 2px;
 }
 
+.table-hover tr:hover {
+    color: rgb(40, 131, 104);
+}
+
 .hovereffect:hover img {
     background: #42b078;
     opacity: 0.9;
