@@ -1,9 +1,9 @@
-<a href="https://ying-li-python.github.io/web-visualization/"><img src="https://raw.githubusercontent.com/ying-li-python/web-visualization/master/Images/web-visualization.png"></a>
+<a href="https://ying-li-python.github.io/web-visualization/" target="_blank"><img src="https://raw.githubusercontent.com/ying-li-python/web-visualization/master/Images/web-visualization.png"></a>
 
 ## Data Analytics and Visualization of BuzzFeed Shows 
 Welcome! The purpose of this project is to examine how video likes changes as view count or comment count increases of two popular BuzzFeed shows, Unsolved and Taste Test, and to present our data visualizations and observations hosted by [GitHub pages](https://pages.github.com/).
 
-Live webpage: https://ying-li-python.github.io/web-visualization/
+<a href="https://ying-li-python.github.io/web-visualization/" target="_blank">Live webpage</a>
 
 
 ## Getting Started
