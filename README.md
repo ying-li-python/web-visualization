@@ -1,6 +1,6 @@
 <a href="https://ying-li-python.github.io/web-visualization/"><img src="https://raw.githubusercontent.com/ying-li-python/web-visualization/master/Images/web-visualization.png"></a>
 
-## Visualization of BuzzFeed Videos with Youtube API
+## Data Visualization of BuzzFeed Video Analytics with Youtube API
 Welcome! The purpose of this project is analyze how video likes changes as view count or comment count increases of two popular BuzzFeed shows, Unsolved and Taste Test, using Google's Youtube API. 
 
 Live webpage: https://ying-li-python.github.io/web-visualization/
