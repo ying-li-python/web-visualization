@@ -2,22 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Youtube Analytics</title>
+  <title>YT Trends</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- CSS styles -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css">
   <!-- CSS styles -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins|Work+Sans:300,400,700&display=swap" rel="stylesheet">
 
 
 </head>
 <body>
 <!-- navbar -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="index.html">Youtube Analytics</div></a>
+    <a class="navbar-brand" href="index.html">YT Trends</div></a>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+        <i class="fas fa-bars"></i>  
     </button>
   
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
@@ -58,14 +59,13 @@
   <div class="row">
     <div class="col-md-8">
       <div class="content">
-          <h3><i class="fa fa-info-circle fa-content"></i> BuzzFeed Shows Analysis </h3>
+          <h3><i class="fa fa-info-circle fa-content"></i> YT Trends </h3>
         <hr>
-        <p>Welcome! The purpose of this project is analyze how video likes changes as view count or comment count increases of two popular BuzzFeed shows, <a href="https://www.youtube.com/channel/UCKijjvu6bN1c-ZHVwR7-5WA" target="_blank">Unsolved</a> and <a href="https://www.youtube.com/playlist?list=PL5vtqDuUM1Dk_EeReI21fzkdnDz2LJySH" target="_blank">Taste Test</a>. Is there a relationship between the number of views or comments with video likes for each show? </p>
-        <p>To answer these questions, data were retrieved from Google's <a href="https://developers.google.com/" target="_blank">Youtube API</a>. We pulled a total of 100 videos, with 50 for each show. </p>
-        <p>After assembling both datasets, we used Matplotlib to plot various video metrics vs. number of likes and used Scipy to determine linear regression and statistical significance. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations observed. </p>          
-        <p><small><a href="https://github.com/ying-li-python/web-visualization" target="_blank">Source Code on Github</a></small></p>
-        
-        <p><small><a href="https://ying-li-python.github.io/" target="_blank">My Portfolio</a></small></p>
+        <p class="describe">Welcome! The purpose of this project is analyze and compare Youtube content between two BuzzFeed shows, <a href="https://www.youtube.com/channel/UCKijjvu6bN1c-ZHVwR7-5WA" target="_blank">Unsolved</a> and <a href="https://www.youtube.com/playlist?list=PL5vtqDuUM1Dk_EeReI21fzkdnDz2LJySH" target="_blank">Taste Test</a>. </p>
+        <p class="describe">This is important because we want to know which of these series reaches audiences in a positive way and helps us understand the type of content that is worth investing. </p>
+        <p class="describe">To answer these questions, data were retrieved from Google's <a href="https://developers.google.com/" target="_blank">Youtube API</a>. We pulled a total of 100 videos, with 50 for each show. After assembling both datasets, we used Matplotlib to plot various video metrics vs. number of likes and used Scipy to determine linear regression and statistical significance. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations observed. </p>          
+        <p><a class="btn btn-primary btn-first" href="http://yingli.dev" target="_blank" role="button">Back to yingli.dev</a>
+        <a class="btn btn-primary btn-second" href="https://github.com/ying-li-python/web-visualization" target="_blank">Source Code</a></p>
       </div>
     </div>
 
@@ -106,12 +106,13 @@
         <div class="col-md-6 mt-md-0 mt-3">
 
           <!-- Content -->
-          <h5><strong>Hi, I'm Ying</strong></h5>
-          <p class="p-footer">I recently graduated with a PhD in Entmology and is currently pursuing a Data Analytics certification at UC Berkeley Extension.</p>
+          <p class="p-footer" style="display: inline">
+            <img src="https://media.licdn.com/dms/image/C5103AQGPpuUFDPryEw/profile-displayphoto-shrink_100_100/0?e=1563408000&amp;v=beta&amp;t=qF53RUUcZum6LoMBeTir6blA2BefhTniSzwtNdCeHgI" class="footer-image" alt="Ying Li, Ph.D." height="24" width="24">&nbsp;By ying with <i class="fas fa-heart" style="font-size: 12px;"></i>
+          </p>    
+          <p class="p-footer">PhD in Entomology with specialization in web development, data analysis, and leadership. Talk to me about data exploration, quantitative research, or web design.</p>
 
-          <p class="p-footer">I also write Python tutorials and create websites for local grassroots organizations committed to social justice.</p>
+          <p class="p-footer">Please do not hesitate to reach out - I am available for a conversation!</p>
 
-          <p class="p-footer">Interested in learning more? Let's connect.</p>
         </div>
         <!-- Grid column -->
 
@@ -134,10 +135,6 @@
                     <i class="fab fa-linkedin-in fa-lg- mr-md-3"><h6> hiuyingli</h6></i>
               </li>
               <li>
-                  <a href="https://ying-li-python.github.io/" target="_blank">
-                    <i class="fab fa-github mr-md-3"><h6> ying-li-python</h6></i>
-              </li>
-              <li>
                   <a href="http://creativepython.wordpress.com" target="_blank">
                     <i class="fab fa-wordpress-simple mr-md-3"><h6> creative-python</h6></i>
               </li>
@@ -148,36 +145,30 @@
 
           <!-- Grid column -->
           <div class="col-md-3 mb-md-0 mb-3">
-
+              <a class="btn btn-dark btn-footer" role="button" target="_blank" href="http://yingli.dev">Back to yingli.dev</a>
             <!-- Links -->
+            <br>
+            <br>
             <h5><strong>Additional Projects</strong></h5>
 
             <ul class="list-unstyled">
               <li>
-                <a href="https://peptide-match.herokuapp.com" target="_blank"><h6> Identify PTM App</h6></a>
-              </li>
-              <li>
-                  <a href="https://github.com/ying-li-python/pubmed-search-api" target="_blank"><h6> PubMed Citation Generator</h6>
+                  <a href="https://github.com/ying-li-python/pubmed-search-api" target="_blank"><h6> Citation Generator</h6>
                     </a>
               </li>
               <li>
-                <a href="https://github.com/ying-li-python/python-challenge" target="_blank"><h6> Python Challenge</h6></a>
+                <a href="https://github.com/ying-li-python/mission-to-mars" target="_blank"><h6> Mission to Mars</h6></a>
               </li>
-              <li>
-                <a href="https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1007953" target="_blank">
-                  <h6><em>PLoS Genetics</em> Paper</h6></a>
-              </li>     
             </ul>
-          </div>
 
+          </div>
           <!-- Grid column -->
-      </div>
 
       <!-- Grid row -->
     </div>
 
     <!-- Footer Links -->
-    <div class="footer-copyright text-center py-2" style="color: rgb(179, 179, 179); font-family: arial; font-size: 13px;">Made in 2019</a>
+    <div class="footer-copyright text-center py-2" style="color: rgb(179, 179, 179); font-family: 'Work Sans', sans-serif; font-size: 13px;">Made in 2019</a>
     </div>
 
 </footer>

@@ -1,6 +1,7 @@
 body {
     background: rgb(223, 223, 223);
     padding-top: 65px; 
+    font-family: 'Work Sans', sans-serif;
 }
 
 h2 { 
@@ -14,27 +15,39 @@ h3 {
 h4 {
     color: black;
     font-size: 15px;
+    font-weight: 300;
 }
 
 h5 {
     color: white;
-    font-family: arial;
+    font-family: 'Work Sans', sans-serif;
     font-size: 16px;
 }
 
 h6 {
     display: inline;
     color: #fff;
-    font-family: arial;
+    font-family: 'Work Sans', sans-serif;
     font-size: 15px;
+    font-weight: 300;
+    text-decoration: none;
 }
 
 h6:hover {
     color: rgb(136, 135, 135);
+    text-decoration: none !important;
 }
 
 p {
     color:  rgb(29, 29, 29);
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.fa-bars {
+   color: #fff;
 }
 
 .far, .fab {
@@ -51,16 +64,45 @@ p {
     margin: 10px;
 }
 
+.describe {
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+}
+
+.dropdown-item:active {
+    background: white;
+    color: black;
+}
 .p-footer {
     color: #fff;
-    font-family: arial;
+    font-family: 'Work Sans', sans-serif;
     font-size: 14px;
+    padding-top: 5px;
+    font-weight: 300;
 }
 
 .page-footer {
-    background-color: rgb(40, 62, 131);
+    background-color: #0e1834;
 }
 
+.btn-footer {
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+}
+
+.btn-footer:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(170, 170, 170);
+}
+
+.btn-footer:active, .btn-footer:active:focus, .btn-footer:focus {
+    color: rgb(66, 66, 66);
+    background: rgb(255, 255, 255) !important;
+    box-shadow: none !important;
+
+}
 .fa-content {
     color: rgb(40, 131, 104);
 }
@@ -68,6 +110,7 @@ p {
 img {
     padding: 2px;
 }
+
 
 .table-hover tr:hover {
     color: rgb(40, 131, 104);
@@ -95,4 +138,54 @@ img {
         width: 80%;
         display: inline-block;
     }
+}
+
+
+.btn-first {
+    display: inline-block;
+    background: #4c9fff;
+    border: none;
+    font-size: 14px;
+    color: #fff;
+}
+
+.btn-first:hover {
+    color: #fff;
+    background: #84beff;
+}
+
+.btn-first:active, .btn-first:active:focus, .btn-first:focus {
+    color: #fff;
+    background: #84beff !important;
+    box-shadow: none !important;
+
+}
+.btn-second {
+    background: #b2b2b2;
+    border: none;
+    font-size: 14px;
+}
+
+.btn-second:hover{
+    color: #fff;
+    background: #cecece;
+}
+
+.btn-second:active, .btn-second:active:focus, .btn-second:focus {
+    color: #fff;
+    background: #cecece !important;
+    box-shadow: none !important;
+
+}
+
+.footer-image {
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    vertical-align: middle;
+    border-radius: 50%;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    border: 1px solid transparent;
+    margin: -1px;
 }

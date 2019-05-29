@@ -9,15 +9,16 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css">
   <!-- CSS styles -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins|Work+Sans:300,400,700&display=swap" rel="stylesheet">
 
 </head>
 <body>
 
 <!-- navbar -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="index.html">Youtube Analytics</div></a>
+  <a class="navbar-brand" href="index.html">YT Trends</div></a>
   <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-  <span class="navbar-toggler-icon"></span>
+      <i class="fas fa-bars"></i>  
   </button>
 
   <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
@@ -64,11 +65,11 @@
         <img src="Images/taste_like_vs_views.png" alt="likes_vs_comments">
         <br>
         <br>
-        <p>This graph shows that as view count increases, the number of like count increases, which demonstrates a positive relationship (<samp><small>r = 0.83</small></samp>).</p>
-        <p>The coefficient of determination, r<sup>2</sup>, is 0.69, indicating that 69% of the variation in comment count can be explained by view count. Additionally, knowing the view count should allow us make an accurate estimate of like count. </p>
-        <p>To view the fit of the regression model to the data, the best-fitted line, "fitted line", has been plotted in red.</p>
-        <p>It appears that there is a significant relationship between view and like count, as the p-value is <0.0001. The p-value shows the probability that the slope is zero, which indicates that there is no correlation between the two variables. In this case, the low p-value indicates that the probability that the two variables are not related are very unlikely. </p>
-        <p>Taken together, these results demonstrate that there is a significant correlation between number of likes and views for the BuzzFeed show, Taste Test. </p>
+        <p class="describe">This graph shows that as view count increases, the number of like count increases, which demonstrates a positive relationship (<samp><small>r = 0.83</small></samp>).</p>
+        <p class="describe">The coefficient of determination, r<sup>2</sup>, is 0.69, indicating that 69% of the variation in comment count can be explained by view count. Additionally, knowing the view count should allow us make an accurate estimate of like count. </p>
+        <p class="describe">To view the fit of the regression model to the data, the best-fitted line, "fitted line", has been plotted in red.</p>
+        <p class="describe">It appears that there is a significant relationship between view and like count, as the p-value is <0.0001. The p-value shows the probability that the slope is zero, which indicates that there is no correlation between the two variables. In this case, the low p-value indicates that the probability that the two variables are not related are very unlikely. </p>
+        <p class="describe">Taken together, these results demonstrate that there is a significant correlation between number of likes and views for the BuzzFeed show, Taste Test. </p>
       </div>
     </div>
 
@@ -108,12 +109,12 @@
         <div class="col-md-6 mt-md-0 mt-3">
 
           <!-- Content -->
-          <h5><strong>Hi, I'm Ying</strong></h5>
-          <p class="p-footer">I recently graduated with a PhD in Entmology and is currently pursuing a Data Analytics certification at UC Berkeley Extension.</p>
+          <p class="p-footer" style="display: inline">
+            <img src="https://media.licdn.com/dms/image/C5103AQGPpuUFDPryEw/profile-displayphoto-shrink_100_100/0?e=1563408000&amp;v=beta&amp;t=qF53RUUcZum6LoMBeTir6blA2BefhTniSzwtNdCeHgI" class="footer-image" alt="Ying Li, Ph.D." height="24" width="24">&nbsp;By ying with <i class="fas fa-heart" style="font-size: 12px;"></i>
+          </p>    
+          <p class="p-footer">PhD in Entomology with specialization in web development, data analysis, and leadership. Talk to me about data exploration, quantitative research, or web design.</p>
 
-          <p class="p-footer">I also write Python tutorials and create websites for local grassroots organizations committed to social justice.</p>
-
-          <p class="p-footer">Interested in learning more? Let's connect.</p>
+          <p class="p-footer">Please do not hesitate to reach out - I am available for a conversation!</p>
         </div>
         <!-- Grid column -->
 
@@ -136,10 +137,6 @@
                     <i class="fab fa-linkedin-in fa-lg- mr-md-3"><h6> hiuyingli</h6></i>
               </li>
               <li>
-                  <a href="https://github.com/ying-li-python" target="_blank">
-                    <i class="fab fa-github mr-md-3"><h6> ying-li-python</h6></i>
-              </li>
-              <li>
                   <a href="http://creativepython.wordpress.com" target="_blank">
                     <i class="fab fa-wordpress-simple mr-md-3"><h6> creative-python</h6></i>
               </li>
@@ -150,26 +147,20 @@
 
           <!-- Grid column -->
           <div class="col-md-3 mb-md-0 mb-3">
-
+              <a class="btn btn-dark btn-footer" role="button" target="_blank" href="http://yingli.dev">Back to yingli.dev</a>
             <!-- Links -->
+            <br>
+            <br>
             <h5><strong>Additional Projects</strong></h5>
 
             <ul class="list-unstyled">
               <li>
-                <a href="https://peptide-match.herokuapp.com" target="_blank"><h6> Identify PTM App</h6></a>
-              </li>
-              <li>
-                  <a href="https://github.com/ying-li-python/pubmed-search-api" target="_blank"><h6> PubMed Citation Generator</h6>
+                  <a href="https://github.com/ying-li-python/pubmed-search-api" target="_blank"><h6> Citation Generator</h6>
                     </a>
               </li>
               <li>
-                <a href="https://github.com/ying-li-python/python-challenge" target="_blank"><h6> Python Challenge</h6></a>
+                <a href="https://github.com/ying-li-python/mission-to-mars" target="_blank"><h6> Mission to Mars</h6></a>
               </li>
-              <li>
-                <a href="https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1007953" target="_blank">
-                  <h6><em>PLoS Genetics</em> Paper</h6></a>
-              </li>
-              
             </ul>
 
           </div>
@@ -181,7 +172,7 @@
     </div>
     <!-- Footer Links -->
 
-    <div class="footer-copyright text-center py-2" style="color: rgb(179, 179, 179); font-family: arial; font-size: 13px;">Made in 2019</a>
+    <div class="footer-copyright text-center py-2" style="color: rgb(179, 179, 179); font-family: 'Work Sans', sans-serif; font-size: 13px;">Made in 2019</a>
     </div>
 
   </footer>
