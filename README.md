@@ -1,7 +1,11 @@
 <a href="https://ying-li-python.github.io/web-visualization/" target="_blank"><img src="https://raw.githubusercontent.com/ying-li-python/web-visualization/master/Images/web-visualization.png"></a>
 
-## Data Analytics and Visualization of BuzzFeed Shows 
-Welcome! The purpose of this project is to examine how video likes changes as view count or comment count increases of two popular BuzzFeed shows, Unsolved and Taste Test, and to present our data visualizations and observations hosted by [GitHub pages](https://pages.github.com/).
+## YT Trends
+Welcome! The purpose of this project is analyze and compare Youtube content between two BuzzFeed shows, Unsolved and Taste Test.
+
+This is important because we want to know which of these series reaches audiences in a positive way and helps us understand the type of content that is worth investing.
+
+In this project, we examined how video likes changes as view count or comment count increases and presented our data visualizations and observations through a website. 
 
 <a href="https://ying-li-python.github.io/web-visualization/" target="_blank">Live webpage</a>
 
