@@ -1,4 +1,4 @@
-<a href="https://ying-li-python.github.io/web-visualization/" target="_blank"><img src="https://raw.githubusercontent.com/ying-li-python/ying-li-python.github.io/master/static/yt_trends.png" height="90%" width="90%"></a>
+<a href="https://ying-li-python.github.io/web-visualization/" target="_blank"><img src="https://raw.githubusercontent.com/ying-li-python/web-visualization/master/Images/yt_trends_m.png"></a>
 
 ## YT Trends
 Welcome! The purpose of this project is analyze and compare Youtube content between two BuzzFeed shows, Unsolved and Taste Test.
