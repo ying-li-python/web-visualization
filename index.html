@@ -41,14 +41,17 @@
 </head>
 <body>
 <!-- navbar -->
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="index.html">YT Trends</div></a>
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="https://yingli.dev/"><img src="static/yl_logo.png" width="5%" height="5%" class="logo"></a>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>  
     </button>
   
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
       <ul class="navbar-nav">
+          <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li> 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
               BuzzFeed Unsolved
@@ -90,7 +93,7 @@
         <p class="describe">Welcome! The purpose of this project is analyze and compare Youtube content between two BuzzFeed shows, <a href="https://www.youtube.com/channel/UCKijjvu6bN1c-ZHVwR7-5WA" target="_blank">Unsolved</a> and <a href="https://www.youtube.com/playlist?list=PL5vtqDuUM1Dk_EeReI21fzkdnDz2LJySH" target="_blank">Taste Test</a>. </p>
         <p class="describe">This is important because we want to know which of these series reaches audiences in a positive way and helps us understand the type of content that is worth investing. </p>
         <p class="describe">To answer these questions, data were retrieved from Google's <a href="https://developers.google.com/" target="_blank">Youtube API</a>. We pulled a total of 100 videos, with 50 for each show. After assembling both datasets, we used Matplotlib to plot various video metrics vs. number of likes and used Scipy to determine linear regression and statistical significance. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations observed. </p>          
-        <p><a class="btn btn-primary btn-first" href="http://yingli.dev" target="_blank" role="button">Back to yingli.dev</a>
+        <p>
         <a class="btn btn-primary btn-second" href="https://github.com/ying-li-python/web-visualization" target="_blank">View source code</a></p>
       </div>
     </div>

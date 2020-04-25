@@ -1,5 +1,5 @@
 body {
-    background: rgb(223, 223, 223);
+    background: #F8F9FA;
     padding-top: 65px; 
     font-family: 'Work Sans', sans-serif;
 }
@@ -47,7 +47,11 @@ p {
 }
 
 .fa-bars {
-   color: #fff;
+   color: rgb(77, 74, 74);
+}
+
+.fa-bars:before {
+    color: black;
 }
 
 .far, .fab, .fas {
@@ -191,4 +195,8 @@ img {
     box-sizing: content-box;
     border: 1px solid transparent;
     margin: -1px;
+}
+
+@media(max-width: 600px) {
+    .logo {width: 45px;height: 38px;}
 }
