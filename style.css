@@ -50,7 +50,7 @@ p {
    color: #fff;
 }
 
-.far, .fab {
+.far, .fab, .fas {
     color: #fff;
 }
 
@@ -83,7 +83,10 @@ p {
 }
 
 .page-footer {
-    background-color: #0e1834;
+    background-color: #333E46;
+    font-family: 'Work Sans', sans-serif; 
+    font-size: 14px;
+    color: #d0dbe6;
 }
 
 .btn-footer {
